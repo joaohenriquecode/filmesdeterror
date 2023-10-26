@@ -1,0 +1,108 @@
+@charset "utf-8";
+@font-face {
+   font-family: ring;
+   src: url(RINGM___.TTF);
+}
+
+body {
+   cursor: url("234464.png"), auto;
+   background-color: #000;
+   margin: 0;
+   /*zerar a margem de todo do documento*/
+   padding: 0;
+   /*zerar o espaçamento de todo do documento*/
+   height: 120vh;
+   width: 100vw;
+   /* background-color: #c5c5c5; */
+   /*Escolha a cor de plano de fundo*/
+}
+
+.container {
+   height: 460px;
+   width: 800px;
+   overflow: hidden;
+   position: absolute;
+   /* Torna possível alterar a posição do container*/
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   /*alterar a posição do eixo*/
+   border-radius: 30px;
+   box-shadow: 0 0 20px #fefcc9, 5px 5px 15px #feec85, 10px 10px 20px #ffae34, 10px 20px 25px #ec760c, 10px 30px 30px #cd4606, 0 40px 35px #973716, 5px 45px 40px #451b0e;;
+}
+
+.navegacao {
+   position: absolute; /*Posição em relação ao container*/
+   bottom: 20px; /*Distância a partir da base*/
+   left: 50%; /*Distância a partir da esquerda*/
+   transform:translate(-50%); /*Alterar o eixo principal*/
+   display: flex; /*Colocar o conteúdo lado a lado*/  
+}
+
+.bar {
+   background-color: #ffd9009b; /*Plano de Fundo do indicador*/
+   width: 30px; /*largura do indicador*/
+   height: 5px; /*Altura do indicador*/
+   margin: 6px; /*Espaço entre os indicadores*/
+   transition: .3s; /*Transição no hover*/
+   cursor: pointer; /*Ponteiro do Mouse */
+}
+
+input {
+   display: none; /*Ocultar as input do tipo Radio*/
+}
+
+.imagens {
+   display: flex; /*Posiciona uma imagem ao lado da outra*/
+   width: 600%; /*define o tamanho da div imagens*/
+   height: 100%; /*define a altura a div imagens*/
+}
+
+.imagem {
+   width: 16.6666666667%; /*Define a proporção do tamanho de cada imagem em relação ao elemento pai*/
+   transition: .5s; /*efeito na transição das imagens*/
+}
+
+.imagem img {
+   width: 100%; /*ajusta o tamanho da imagem dentro do container*/
+   height: 100%; /*ajusta o tamanho da imagem dentro do container*/
+}
+
+#imagem1:checked ~ .img1 {
+   margin-left: 0; /*alteração na margem esquerda*/
+}
+
+#imagem2:checked ~ .img1 {
+   margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1 {
+   margin-left: -33.3333333333%;
+}
+#imagem4:checked ~ .img1 {
+   margin-left: -50%;
+}
+#imagem5:checked ~ .img1 {
+   margin-left: -66.6666666667%;
+}
+#imagem6:checked ~ .img1 {
+   margin-left: -83.3333333333%;
+}
+
+footer{
+   position: absolute;
+   top: 110%;
+   left: 50%;
+   transform: translate(-50%);
+   color: #ffd700;
+   font-family: ring;
+}
+
+
+h1{
+   font-family: ring;
+   text-align: center;
+   font-size: 4em;
+   margin-bottom: 1em;
+   color: #ffd700;
+}   
